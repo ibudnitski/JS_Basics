@@ -13,7 +13,11 @@ let user = {
 
 let cloneUser = _.cloneDeep(user);
 
+let clone = structuredClone(cloneUser);
+
 cloneUser.name = "Herbert";
 
 console.log(JSON.stringify(user));
 console.log(JSON.stringify(cloneUser));
+console.log(JSON.stringify(clone));
+
